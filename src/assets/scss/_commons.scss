@@ -1,0 +1,13 @@
+:root {
+    --body-background-color: #000000;
+    --body-text-color: #ffffff;
+    --breakline-bg-color: #434343;
+    --breakline-height: 1px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-background-color);
+    font-size: rem(16);
+    color: var(--body-text-color);
+}
