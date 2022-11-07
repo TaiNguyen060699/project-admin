@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>HelloWorld</h1>
+    <h1 class="text-3xl font-bold underline">HelloWorld</h1>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   font-size: 18px;
+  color: $black-3;
 
   @include mq($BREAKPOINT-LG) {
     font-size: 24px;
