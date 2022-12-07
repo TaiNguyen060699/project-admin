@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://a7fd17ad-9fb6-4e95-a502-8b6a502a2957.mock.pstmn.io";
+const BASE_URL = "http://dev.okxe.vn:9060/api";
 
 export const AXIOS = axios.create({
   baseURL: BASE_URL,

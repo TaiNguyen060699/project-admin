@@ -1,17 +1,27 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="page-login">
+    <FormLogin />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script setup>
+import FormLogin from "@/components/stateful/FormLogin/FormLogin.vue";
+import { useMeta } from 'vue-meta'
 
-export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-};
+useMeta({
+  title: 'Login',
+  htmlAttrs: { lang: 'en', amp: true }
+})
+
+
 </script>
+
+<style lang="scss" scoped>
+.page-login {
+  display: flex;
+  background-image: url('@/assets/img/bg-login.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+</style>

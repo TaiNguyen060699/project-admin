@@ -11,3 +11,14 @@ body {
     font-size: rem(16);
     color: var(--body-text-color);
 }
+
+.btn {
+    height: auto;
+    width: auto;
+    min-width: unset;
+    margin: 0;
+    padding: 0.7rem 2.1rem;
+    border-radius: 3rem;
+    font-size: 15px;
+    transition: all 0.3s linear;
+}

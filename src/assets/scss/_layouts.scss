@@ -1,0 +1,23 @@
+html {
+    font-size: $default-rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-size: $size-default;
+    line-height: 23.4px / $size-default;
+    background: $body-bg;
+    color: $body-txt;
+
+    &.--freeze {
+        position: relative;
+        height: 100%;
+        overflow: hidden !important;
+
+        html.ios & {
+            position: fixed;
+            width: 100%;
+        }
+    }
+}
