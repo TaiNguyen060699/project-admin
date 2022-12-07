@@ -23,7 +23,6 @@ const submit = async () => {
     const res = await store.dispatch('authen/LOGIN_ACCOUNT', params)
     if (!res) return
     this.$router.replace("/123")
-    console.log('submit', res)
 }
 
 </script>
